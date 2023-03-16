@@ -5,6 +5,7 @@ import GlobalStyle from "../styles/globalStyles";
 import { UserContextProvider } from "../contexts/UserContext";
 import { Main, Name } from "./screens";
 import { Container, Title } from "./style";
+import BottomMenu from "./utils/BottomMenu";
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
               <Route path="*" element={<Navigate to="/" />} />
 
             </Routes>
+            <BottomMenu />
           </BrowserRouter>
         </Container>
       </UserContextProvider>  

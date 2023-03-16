@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const UserContext = createContext();
 
-export const resetedAddress = {
+const resetedAddress = {
     cep: "",
     logradouro: "",
     complemento: "",
@@ -20,7 +20,7 @@ export function UserContextProvider ({ children }) {
     const [address, setAddress] = useState(resetedAddress)
 
     return (
-        <UserContext.Provider value={{name, setName, address, setAddress}}>
+        <UserContext.Provider value={{name, setName, address, setAddress, resetedAddress}}>
             {children}
         </UserContext.Provider>
     )
