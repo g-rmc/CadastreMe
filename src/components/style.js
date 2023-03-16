@@ -7,6 +7,7 @@ const Container = styled.div`
   height: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  padding-bottom: 80px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -16,7 +17,7 @@ const Title = styled.h1`
   font-family: 'Monofett', cursive;
   letter-spacing: 0.05em;
   font-size: 100px;
-  margin: 80px 0;
+  margin: 60px 0 20px 0;
   @media screen and (min-width: 350px) and (max-width: 700px) {
     font-size: calc(100vw/7);
   }

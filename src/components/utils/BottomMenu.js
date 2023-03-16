@@ -43,6 +43,8 @@ export default function BottomMenu() {
 
 const Container = styled.div`
     width: 100%;
+    min-width: 350px;
+    max-width: 700px;
     height: 60px;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -50,6 +52,8 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding: 15px;
+    position: fixed;
+    bottom: 0;
 
     .MuiBottomNavigation-root {
         height: 100%;
