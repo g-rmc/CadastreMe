@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import GlobalStyle from "../styles/globalStyles";
@@ -18,6 +18,9 @@ export default function App() {
             <Routes>
 
               <Route path="/" element={<Main />}/>
+              <Route path="/name" element={<>Name</>} />
+              <Route path="/address" element={<>Address</>} />
+              <Route path="/validate" element={<>Validate</>} />
               <Route path="*" element={<Navigate to="/" />} />
 
             </Routes>

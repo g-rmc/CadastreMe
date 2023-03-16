@@ -18,6 +18,7 @@ const ScreenTitle = styled.h1`
   font-size: 32px;
   line-height: 40px;
   text-align: center;
+  margin-bottom: 20px;
 `
 
 export { ScreenContainer, ScreenTitle };

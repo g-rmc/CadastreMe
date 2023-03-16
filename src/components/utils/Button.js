@@ -18,14 +18,18 @@ export function CustomButton({message, action, navigateTo}) {
 
 const Container = styled.div`
     width: 100%;
+    height: 40px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 24px;
     color: white;
     background-color: #21480B;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
     :hover{
-        filter: brightness(1.4);
+        filter: brightness(0.6);
     }
 
     :active{
