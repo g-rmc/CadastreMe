@@ -21,4 +21,13 @@ const ScreenTitle = styled.h1`
   margin-bottom: 20px;
 `
 
-export { ScreenContainer, ScreenTitle };
+const ButtonBox = styled.div`
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+  button {
+    width: calc(50% - 10px)
+  }
+`
+
+export { ScreenContainer, ScreenTitle, ButtonBox };

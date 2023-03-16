@@ -60,10 +60,11 @@ body {
     color: #21480B;
 }
 button{
-    font-family: 'Lexend Deca', sans-serif;
-		cursor: pointer;
+    border: none;
+    font-family: "Bebas Neue", sans-serif;
+	cursor: pointer;
     :hover{
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
     :active{
         transform: translateY(2px);

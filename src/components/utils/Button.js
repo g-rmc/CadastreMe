@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-export function CustomButton({message, action, navigateTo}) {
+export function CustomButton({message, action, navigateTo, disabled}) {
     const navigate = useNavigate();
     let buttomAction;
 
@@ -10,29 +10,20 @@ export function CustomButton({message, action, navigateTo}) {
     if (navigateTo) buttomAction = () => {navigate(navigateTo)};
 
     return (
-        <Container onClick={buttomAction}>
+        <Container onClick={buttomAction} disabled={disabled}>
             {message}
         </Container>
     )
 }
 
-const Container = styled.div`
+const Container = styled.button`
     width: 100%;
     height: 40px;
-    font-family: "Bebas Neue", sans-serif;
     font-size: 24px;
     color: white;
-    background-color: #21480B;
+    ${props => props.disabled? "background-color: #9C9C9C;" : "background-color: #21480B;"}
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-
-    :hover{
-        filter: brightness(0.6);
-    }
-
-    :active{
-        transform: translateY(2px);
-    }
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
