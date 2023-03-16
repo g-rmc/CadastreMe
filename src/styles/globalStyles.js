@@ -56,8 +56,8 @@ a {
 }
 body {
     font-family: 'Lexend Deca', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #E0FFDB;
+    color: #21480B;
 }
 button{
     font-family: 'Lexend Deca', sans-serif;

@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import GlobalStyle from '../styles/globalStyles';
-import { UserContextProvider } from '../contexts/UserContext';
-//import { Component } from './Component';
+import GlobalStyle from "../styles/globalStyles";
+import { UserContextProvider } from "../contexts/UserContext";
+import { Main } from "./screens";
+import { Container, Title } from "./style";
 
 
 export default function App() {
@@ -14,9 +14,10 @@ export default function App() {
       <UserContextProvider>
         <Container>
           <BrowserRouter>
+            <Title>CADASTRE.ME</Title>
             <Routes>
 
-              <Route path='/' element={<>Bla</>}/>
+              <Route path="/" element={<Main />}/>
               <Route path="*" element={<Navigate to="/" />} />
 
             </Routes>
@@ -26,17 +27,3 @@ export default function App() {
     </>
   );
 }
-
-//Styled for mimic app screen into PC
-const Container = styled.div` 
-  width: 100%;
-  min-width: 350px;
-  max-width: 600px;
-  height: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
