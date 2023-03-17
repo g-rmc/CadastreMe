@@ -1,6 +1,35 @@
-# Getting Started with Create React App
+# Cadastre.me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview-Screens](https://github.com/g-rmc/CadastraMe/blob/main/assets/CadastreMe_Screens.png)
+
+If you want to take a look at the app, please click [here](cadastre-me.vercel.app) [pt-br].
+
+## About this Project
+
+**Cadastre.me** is a front-end SPA application that simulates a registration screen with name and address inputs. The address information is automatically filled in based on the registered postal code (with [ViaCEP](https://viacep.com.br/)), leaving the user to complete the form information. The application also features a confirmation screen and a success message upon registration.
+
+## Feedbacks?
+
+This project is part of my portfolio, any feedback will be greatly appreciated.
+
+E-mail: g.rmc3000@gmail.com
+Or contact me in [LinkedIn](https://www.linkedin.com/in/guilherme-rmc/)
+
+## Getting Started
+
+This project works with [Docker Container](https://www.docker.com/resources/what-container/)!
+
+- Cloning the Repository:
+
+```bash
+git clone https://github.com/g-rmc/CadastreMe.git
+```
+
+- Install all dependencies:
+
+```bash
+npm i
+```
 
 ## Available Scripts
 
@@ -13,11 +42,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
