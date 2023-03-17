@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import GlobalStyle from "../styles/globalStyles";
 import { UserContextProvider } from "../contexts/UserContext";
-import { Main, Name } from "./screens";
+import { Main, Name, Address, Validate } from "./screens";
 import { Container, Title } from "./style";
-import BottomMenu from "./utils/BottomMenu";
+import { BottomMenu } from "./utils";
 
 
 export default function App() {
@@ -20,8 +20,8 @@ export default function App() {
 
               <Route path="/" element={<Main />}/>
               <Route path="/name" element={<Name />} />
-              <Route path="/address" element={<>Address</>} />
-              <Route path="/validate" element={<>Validate</>} />
+              <Route path="/address" element={<Address />} />
+              <Route path="/validate" element={<Validate />} />
               <Route path="*" element={<Navigate to="/" />} />
 
             </Routes>

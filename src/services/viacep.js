@@ -1,5 +1,3 @@
-//appname.js
-
 import axios from 'axios';
 
 function generateViaCepUrl (cep) {

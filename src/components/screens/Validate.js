@@ -5,8 +5,8 @@ import { UserContext } from "../../contexts/UserContext";
 import { ScreenContainer, ScreenTitle, ButtonBox } from "./style";
 import { CustomButton } from "../utils";
 
-export function Name() {
-    const { name, setName } = useContext(UserContext);
+export function Validate() {
+    const { name, address } = useContext(UserContext);
 
     function isButtonDisabled() {
         if (!name) return true
@@ -14,7 +14,7 @@ export function Name() {
     }
 
     function handleChange(e) {
-        setName(e.target.value);
+        //setName(e.target.value);
     }
 
     return (
@@ -26,7 +26,6 @@ export function Name() {
                 required
                 fullWidth
                 id="standard-required"
-                name="name"
                 label="Nome"
                 value={name}
                 onChange={handleChange}

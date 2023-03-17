@@ -26,7 +26,7 @@ const ButtonBox = styled.div`
   justify-content: space-between;
   margin-top: 20px;
   button {
-    width: calc(50% - 10px)
+    width: calc(50% - 30px)
   }
 `
 

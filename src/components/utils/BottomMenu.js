@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 
-export default function BottomMenu() {
+export function BottomMenu() {
     const [menuIndex, setMenuIndex] = useState(0);
 
     const location = useLocation();
