@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import { ScreenContainer, ScreenTitle } from "./style";
 import { CustomButton } from "../utils";
@@ -7,8 +7,10 @@ import { UserContext } from "../../contexts/UserContext";
 export function Main() {
     const { setName, setAddress, resetedAddress } = useContext(UserContext);
 
-    setName("");
-    setAddress(resetedAddress);
+    useEffect(() => {
+        setName("");
+        setAddress(resetedAddress);    
+    }, [setName, setAddress, resetedAddress])
 
     return (
         <ScreenContainer>

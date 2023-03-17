@@ -16,10 +16,7 @@ export function AddressForm({loading = false, readOnly = false}) {
             <TextField
                 required
                 fullWidth
-                InputProps={{
-                    readOnly,
-                }}
-                disabled={loading}
+                disabled={loading || readOnly}
                 id="standard-required"
                 name="logradouro"
                 label="Logradouro"
@@ -31,10 +28,7 @@ export function AddressForm({loading = false, readOnly = false}) {
             <SubContainer>
                 <TextField
                     required
-                    InputProps={{
-                        readOnly,
-                    }}
-                    disabled={loading}
+                    disabled={loading || readOnly}
                     id="standard-required"
                     name="numero"
                     label="Número"
@@ -44,10 +38,7 @@ export function AddressForm({loading = false, readOnly = false}) {
                     margin="normal"
                 />
                 <TextField
-                    InputProps={{
-                        readOnly,
-                    }}
-                    disabled={loading}
+                    disabled={loading || readOnly}
                     id="standard-required"
                     name="complemento"
                     label="Complemento"
@@ -60,10 +51,7 @@ export function AddressForm({loading = false, readOnly = false}) {
             <TextField
                 required
                 fullWidth
-                InputProps={{
-                    readOnly,
-                }}
-                disabled={loading}
+                disabled={loading || readOnly}
                 id="standard-required"
                 name="bairro"
                 label="Bairro"
@@ -75,10 +63,7 @@ export function AddressForm({loading = false, readOnly = false}) {
             <SubContainer>
                 <TextField
                     required
-                    InputProps={{
-                        readOnly,
-                    }}
-                    disabled={loading}
+                    disabled={loading || readOnly}
                     id="standard-required"
                     name="localidade"
                     label="Cidade"
@@ -89,10 +74,7 @@ export function AddressForm({loading = false, readOnly = false}) {
                 />
                 <TextField
                     required
-                    InputProps={{
-                        readOnly,
-                    }}
-                    disabled={loading}
+                    disabled={loading || readOnly}
                     id="standard-required"
                     name="uf"
                     label="Estado"
