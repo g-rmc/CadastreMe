@@ -5,6 +5,7 @@ export const UserContext = createContext();
 const resetedAddress = {
     cep: "",
     logradouro: "",
+    numero: "",
     complemento: "",
     bairro: "",
     localidade: "",

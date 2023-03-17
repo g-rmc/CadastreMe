@@ -19,7 +19,8 @@ export function Address() {
     }, [name, navigate]);
 
     function isButtonDisabled() {
-        if (address.cep.length < 8) return true
+        if (address.cep.length < 8) return true;
+        if (!address.logradouro || !address.numero || !address.bairro || !address.localidade || !address.uf) return true;
         return false
     }
 
