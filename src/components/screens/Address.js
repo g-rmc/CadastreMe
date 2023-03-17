@@ -60,6 +60,7 @@ export function Address() {
                 required
                 fullWidth
                 error={cepError}
+                helperText={cepError? "CEP inválido" : " "}
                 disabled={loading}
                 id="standard-required"
                 name="cep"
