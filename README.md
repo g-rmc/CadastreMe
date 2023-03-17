@@ -17,8 +17,6 @@ Or contact me in [LinkedIn](https://www.linkedin.com/in/guilherme-rmc/)
 
 ## Getting Started
 
-This project works with [Docker Container](https://www.docker.com/resources/what-container/)!
-
 - Cloning the Repository:
 
 ```bash
