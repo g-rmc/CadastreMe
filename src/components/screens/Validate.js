@@ -20,7 +20,7 @@ export function Validate() {
     return (
         <ScreenContainer>
             <ScreenTitle>
-                Olá, digite seu nome para prosseguir!
+                {name}, confira seus dados!
             </ScreenTitle>
             <TextField
                 required
@@ -32,8 +32,8 @@ export function Validate() {
                 variant="standard"
             />
             <ButtonBox>
-                <CustomButton message={"VOLTAR"} navigateTo={"/"}/>
-                <CustomButton message={"AVANÇAR"} navigateTo={"/address"} disabled={isButtonDisabled()}/>
+                <CustomButton message={"VOLTAR"} navigateTo={"/address"}/>
+                <CustomButton message={"CONFIRMAR"} navigateTo={"/address"} disabled={isButtonDisabled()}/>
             </ButtonBox>
         </ScreenContainer>
     )

@@ -5,7 +5,7 @@ import { RotatingLines } from "react-loader-spinner";
 
 import { UserContext } from "../../contexts/UserContext";
 import { ScreenContainer, ScreenTitle, ButtonBox } from "./style";
-import { CustomButton } from "../utils";
+import { CustomButton, AddressForm } from "../utils";
 import { getCEPinfo } from "../../services/viacep";
 
 export function Address() {
@@ -69,8 +69,9 @@ export function Address() {
                 onChange={handleChange}
                 variant="standard"
             />
+            <AddressForm loading={loading} />
             <ButtonBox>
-                <CustomButton message={"VOLTAR"} navigateTo={"/"} disabled={loading}/>
+                <CustomButton message={"VOLTAR"} navigateTo={"/name"} disabled={loading}/>
                 <RotatingLines
                     strokeColor="grey"
                     strokeWidth="5"
@@ -78,7 +79,7 @@ export function Address() {
                     width="40"
                     visible={loading}
                 />
-                <CustomButton message={"AVANÇAR"} navigateTo={"/address"} disabled={isButtonDisabled() || loading}/>
+                <CustomButton message={"AVANÇAR"} navigateTo={"/validate"} disabled={isButtonDisabled() || loading}/>
             </ButtonBox>
         </ScreenContainer>
     )

@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 export function CustomButton({message, action, navigateTo, disabled}) {
     const navigate = useNavigate();
-    let buttomAction;
+    let buttonAction = () => {};
 
-    if (action) buttomAction = action;
-    if (navigateTo) buttomAction = () => {navigate(navigateTo)};
+    if (action) buttonAction = action;
+    if (navigateTo) buttonAction = () => {navigate(navigateTo)};
 
     return (
-        <Container onClick={buttomAction} disabled={disabled}>
+        <Container onClick={buttonAction} disabled={disabled}>
             {message}
         </Container>
     )
