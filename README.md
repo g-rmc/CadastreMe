@@ -1,6 +1,6 @@
 # Cadastre.me
 
-![Preview-Screens](https://github.com/g-rmc/CadastraMe/blob/main/assets/CadastreMe_Screens.png)
+![Preview-Screens](https://github.com/g-rmc/CadastreMe/blob/main/assets/CadastreMe_Screens.png)
 
 If you want to take a look at the app, please click [here](cadastre-me.vercel.app) [pt-br].
 
